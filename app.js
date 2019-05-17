@@ -40,6 +40,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const index = require("./routes/index");
 app.use("/", index);
 
+const calendar = require("./routes/calendar");
+app.use("/", calendar);
+
 const auth = require("./routes/login");
 app.use("/auth", auth);
 
